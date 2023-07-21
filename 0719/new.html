@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="">
+          <!-- 把螢幕寬度調full，拉開寬度才可以左右拉開justify-between -->
+    <header class="absolute flex w-full justify-between">
+        <h1 class=" text-white w-[300px] p-5 font-semibold">LOGO</h1>
+        
+        <div class="flex justify-end p-5 gap-8 font-semibold">
+            <div class="text-white">About us</div>
+            <div class="text-white">Contact us</div>
+            <div class="text-white">News</div>
+            <div class="text-white">Products</div>
+            
+        </div>
+
+    </header>
+    <div class="hidden sm:">
+        <div class="absolute p-3 top-0 right-0">
+            <div class="w-6 h-0.5 bg-purple-600 m-2"></div>
+            <div class="w-6 h-0.5 bg-white m-2"></div>
+            <div class="w-6 h-0.5 bg-white m-2"></div>
+        </div>
+    </div>
+
+
+
+    <div class="">
+      <img class="" src="banner.jpg" alt="">
+    </div>
+    
+</body>
+</html>

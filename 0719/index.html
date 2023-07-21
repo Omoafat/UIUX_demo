@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Document</title>
+
+
+</head>
+
+<body class="flex flex-col justify-cneter items-center">
+  <div class="flex h-screen">
+    <div class="bg-green-600 w-40 ">側邊欄</div>
+    <div class="bg-gray-400 w-screen">內容</div>
+  </div>
+
+  <div class="flex flex-col">
+    <button
+      class="w-32 bg-rose-400 m-2 rounded-2xl hover:translate-x-4 hover:bg-rose-600 hover:scale-125 duration-500 cursor-pointer">Let's
+      Go!</button>
+    <button
+      class="w-32 bg-[#22c55e] m-2 rounded-2xl hover:translate-x-4 hover:bg-[#0d9488] hover:scale-125 duration-500 cursor-pointer">Oops!</button>
+    <button
+      class="w-32 bg-[#7dd3fc] m-2 rounded-2xl hover:translate-x-4 hover:bg-[#0284c7] hover:scale-125 duration-500 cursor-pointer">Hello</button>
+    <button
+      class="w-32 bg-[#c4b5fd] m-2 rounded-2xl hover:translate-x-4 hover:bg-[#9333ea] hover:scale-125 duration-500 cursor-pointer">Oh...</button>
+  </div>
+  <div class="flex flex-wraps">
+    <div class="bg-amber-500 w-[200px] h-[200px] m-1">card</div>
+    <div class="bg-blue-500 w-[200px] h-[200px] m-1">card</div>
+    <div class="bg-yellow-500 w-[200px] h-[200px] m-1">card</div>
+    <div class="bg-green-500 w-[200px] h-[200px] m-1">card</div>
+  </div>
+
+  <div class="w-[300px] h-auto p-5 rounded border border-gray-300 relative">
+    <div class="w-full bg-gray-300 h-32"></div>
+    <h1>Title</h1>
+    <p>content</p>
+
+    <button class="absolute -top-2 -right-2 bg-teal-400 rounded-full w-5 h-5 flex justify-center items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+        viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+      </svg>
+    </button>
+  </div>
+
+</body>
+
+</html>
