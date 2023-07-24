@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mo's World</title>
+</head>
+
+<body>
+    <!-- js寫在script裡面，type= text/javascript可以刪除不影響 -->
+    <script src="https://unpkg.com/real-turtle"></script>
+    <canvas id="real-turtle"></canvas>
+    <!-- 做遊戲常用到，嵌入的圖片 -->
+    <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+
+    <script>
+        //Your turtle commands go here
+        turtle.setSpeed(0.9);
+        turtle.setStrokeColorRGB(0, 150, 150);
+        turtle.setSize(0);
+        turtle.setLineWidth(5);
+        turtle.setPosition(200, 200)
+        // turtle.forward(100)
+        // 設定速度
+        // let i = 0;
+        // while (i < 900) {
+        //     turtle.forward(i);
+        //     turtle.left(90);
+        //     i = i + 1
+        // }
+
+        var a1 = 50;
+        var b1 = 60;
+        console.log = (a1 + b1);
+        // 變數：把50暫存到a1，a1= 50
+        // console可以加減乘除
+        // let= var 
+        alert("HELLO!!")
+
+
+        for (var penDown = 0; penDown < 2; penDown = penDown + 1) {
+            turtle
+                .fd(100)
+                .right(90)
+                .fd(10)
+                .right(60)
+                .fd(60)
+                .left(120)
+                .fd(60)
+                .right(60)
+                .fd(10)
+                .right(90)
+                .fd(100)
+                .right(90)
+                .fd(10)
+                .right(90)
+                .fd(80)
+                .left(150)
+                .fd(60)
+                .right(120)
+                .fd(60)
+                .left(150)
+                .fd(80)
+                .right(90)
+                .fd(10)
+                .penUp()
+                .fd(-150)
+
+                .penDown()
+                .arc(50, 360, false)
+                .right(90)
+                .penUp()
+                .fd(11)
+                .right(90)
+                .penDown()
+                .arc(38, 360, true)
+                .right(90)
+                .penUp()
+                .fd(10)
+                .left(90)
+                .fd(80)
+                .penDown()
+                .left(90)
+        }
+
+        
+        turtle.penUp();
+        turtle.fd(50);
+        while (arc < 4){
+            turtle
+                .arc(25, 180, false)
+                .arc(25, 180, true)
+        }
+
+
+
+        for (var i = 0; i < 3; i = i + 1) // 括弧裡的第二個參數為執行條件
+        { }
+    </script>
+</body>
+
+</html>
