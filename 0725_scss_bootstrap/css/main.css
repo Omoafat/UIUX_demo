@@ -1,4 +1,7 @@
+.container-fluid {
+  background-color: #e77777;
+}
 
-body h1 {
-  background-color: green;
+body {
+  background-color: aqua;
 }/*# sourceMappingURL=main.css.map */
