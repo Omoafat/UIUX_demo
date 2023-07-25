@@ -1,0 +1,32 @@
+@import 'variable';
+
+.container-fluid{
+    background-color: $red;
+} 
+// 用變數可以統一改
+body{
+    background-color: aqua;
+}
+
+
+// @media(min-width: $sm){
+//     body{
+//         background-color: red;
+//         // 超過576大小背景變紅色
+//     }
+// }
+// @media(min-width: $md){
+//     body{
+//         background-color: yellow;
+//     }
+// }
+// @media(min-width: $xl){
+//     body{
+//         background-color: green;
+//     }
+// }
+// @media(min-width: $xxl){
+//     body{
+//         background-color: blueviolet;
+//     }
+// }
