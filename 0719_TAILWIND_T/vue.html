@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vue</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -47,36 +47,38 @@
    </div>
 
 
-</body>
+
 
 
 
 <!-- vue起手式 -->
 <script>
-    const { createApp, ref, reactive } = Vue
+  const { createApp, ref, reactive } = Vue
 //  ref 數值 字串 布林值/ reactive 陣列 物件
-    createApp({
-      setup() {
-        const news = reactive([
-            { title: 'title1', id: '1', show:'false',content: '123' },
-            { title: 'title2', id: '2', show:'false',content: '456' },
-            { title: 'title3', id: '3', show:'false',content: '789' },
-            { title: 'title4', id: '4', show:'false',content: '012' },
-            { title: 'title5', id: '5', show:'false',content: '345' },
-            { title: 'title6', id: '6', show:'false',content: '678' },
-        ])
-        
-        function choose(item) {
-            item.show = !item.show;
+  createApp({
+    setup() {
+      const news = reactive([
+          { title: 'title1', id: '1', show:'false',content: '123' },
+          { title: 'title2', id: '2', show:'false',content: '456' },
+          { title: 'title3', id: '3', show:'false',content: '789' },
+          { title: 'title4', id: '4', show:'false',content: '012' },
+          { title: 'title5', id: '5', show:'false',content: '345' },
+          { title: 'title6', id: '6', show:'false',content: '678' },
+      ])
+      
+      function choose(item) {
+          item.show = !item.show;
 
-        }
-
-        return {
-          news,
-          choose,
-        }
       }
-    }).mount('#app')
+
+      return {
+        news,
+        choose,
+      }
+    }
+  }).mount('#app')
 </script>
+
+</body>
 
 </html>

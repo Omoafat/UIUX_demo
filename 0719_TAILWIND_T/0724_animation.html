@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Swiper</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -18,17 +18,22 @@
   </script>
   
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <!-- Link Swiper's CSS -->
+
+    <!-- 以下Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <!-- Demo styles -->
+    <!-- Swiper CDN link -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Animate.css的CDN -->
   <link rel="stylesheet" href="css/animate.css">
+
   <script src="js/wow.min.js"></script>
+    <!-- 連WOW動畫的CDN -->
   <script>
     new WOW().init();
   </script>
 
+<!-- Swiper通常為style -->
   <style>
     html,
     body {
@@ -93,7 +98,18 @@
     <div class="swiper-pagination"></div>
   </div>
 
-  <!-- Swiper JS -->
+
+  <div class="h-screen wow animate__animated animate__bounce">
+    123
+  </div>
+<h1 class="wow animate__animated animate__bounce">
+456
+</h1>
+
+
+
+
+  <!-- Swiper's JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
@@ -109,14 +125,6 @@
       },
     });
   </script>
-
-
-  <div class="h-screen wow animate__animated animate__bounce">
-    123
-  </div>
-<h1 class="wow animate__animated animate__bounce">
-456
-</h1>
 </body>
 
 </html>

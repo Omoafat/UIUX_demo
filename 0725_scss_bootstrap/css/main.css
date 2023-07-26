@@ -4,4 +4,8 @@
 
 body {
   background-color: aqua;
+}
+
+.row {
+  border-right: 1px solid red;
 }/*# sourceMappingURL=main.css.map */

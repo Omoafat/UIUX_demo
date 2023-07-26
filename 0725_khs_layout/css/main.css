@@ -1,0 +1,28 @@
+header {
+  background-image: url(../img/bg/bg-32.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header nav {
+  display: flex;
+}
+header nav .nav_left {
+  display: flex;
+}
+header nav .nav_menu {
+  display: none;
+  opacity: 0;
+}
+header nav .nav_right {
+  display: flex;
+  margin-left: auto;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=main.css.map */

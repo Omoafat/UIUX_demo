@@ -3,9 +3,13 @@
 .container-fluid{
     background-color: $red;
 } 
+// 做成滿版
 // 用變數可以統一改
 body{
     background-color: aqua;
+}
+.row{
+    border-right: 1px solid red;
 }
 
 

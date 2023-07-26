@@ -1,0 +1,28 @@
+header{
+    background-image: url(../img/bg/bg-32.png);
+    // 背景圖片
+    // 高度無法用百分比
+    height: 100vh;
+    // 寬度不一定要寫
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // cover 圖片自動覆蓋在容器上
+    // contain 圖片剛好充滿容器，拉大會重複排版
+    background-position: center;
+    // center 完全置中 position還能調比例位置
+    nav{
+        display: flex;
+        .nav_left{
+            display: flex;
+        }
+        .nav_menu{
+            display: none;
+            opacity: 0;
+        }
+        .nav_right{
+            display: flex;
+            margin-left: auto;
+        }
+    }
+}
