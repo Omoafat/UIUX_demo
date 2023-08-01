@@ -16,7 +16,9 @@
             <a class="logo" href="">
                 <img src="img/LOGO1.svg" alt="">
             </a>
-            <ul class="nav_left">
+            <ul id="navbarCollapse" class="nav_left collapse navbar-collapse d-lg-flex">
+                <!-- 加入這兩個class: collapse navbar-collapse -->
+                <!-- 網頁點及ham之後會出現class: show -->
                 <li>
                     <a href="about.html">關於我們</a>
                     <div class="nav_menu">
@@ -101,6 +103,10 @@
                 <li><a class="public_icon h_youtube" title="youtube" href="#">youtube</a></li>
                 <li><a class="public_icon h_line" title="line" href="#">line</a></li>
             </ul>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                三條線
+              </button>
+              <!-- Bootstrap漢堡排模板 -->
             <div class="nav_search">
                 搜尋
             </div>
@@ -108,23 +114,27 @@
         <!-- Swiper -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" >
+                    <!-- style="background-image: url(img/bg/bg-32.png);" -->
                     <img src="img/bg/bg-32.png" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" >
+                    <!-- style="background-image: url(img/bg/bg-33.png);" -->
                     <img src="img/bg/bg-33.png" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" >
+                    <!-- style="background-image: url(img/bg/bg-34.png);" -->
                     <img src="img/bg/bg-34.png" />
                 </div>
-                <div class="swiper-slide">
-                    <img src="img/bg/bg-33.png" />
-                </div>
+                
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            
         </div>
+        <div class="swiper-pagination"></div>
+        <!-- 把輪播圖點點與圖底下文字置為同層級 才不會被蓋過 -->
+        <!-- 但點點的div太長會蓋到"關於我們"，要縮短並靠右 -->
         <div class="bottom_area">
             <h1>
                 全心灌溉熱愛音樂的幼苗
@@ -133,6 +143,7 @@
             <p>功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。</p>
             <a>關於我們</a>
         </div>
+        <!-- 若要將文字也變成可輪播 把文字區塊放進swiper slide即可 -->
         <a id="go_down" class="go_down" href="#">down</a>
 
     </header>
