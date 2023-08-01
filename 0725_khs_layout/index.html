@@ -103,10 +103,18 @@
                 <li><a class="public_icon h_youtube" title="youtube" href="#">youtube</a></li>
                 <li><a class="public_icon h_line" title="line" href="#">line</a></li>
             </ul>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                三條線
-              </button>
-              <!-- Bootstrap漢堡排模板 -->
+            <div class="nav_mobile d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="menu">
+                    <div class="line line0"></div>
+                    <div class="line_parent">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap漢堡排模板 -->
             <div class="nav_search">
                 搜尋
             </div>
@@ -114,23 +122,23 @@
         <!-- Swiper -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" >
+                <div class="swiper-slide">
                     <!-- style="background-image: url(img/bg/bg-32.png);" -->
                     <img src="img/bg/bg-32.png" />
                 </div>
-                <div class="swiper-slide" >
+                <div class="swiper-slide">
                     <!-- style="background-image: url(img/bg/bg-33.png);" -->
                     <img src="img/bg/bg-33.png" />
                 </div>
-                <div class="swiper-slide" >
+                <div class="swiper-slide">
                     <!-- style="background-image: url(img/bg/bg-34.png);" -->
                     <img src="img/bg/bg-34.png" />
                 </div>
-                
+
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            
+
         </div>
         <div class="swiper-pagination"></div>
         <!-- 把輪播圖點點與圖底下文字置為同層級 才不會被蓋過 -->
@@ -147,7 +155,138 @@
         <a id="go_down" class="go_down" href="#">down</a>
 
     </header>
+    <main>
+        <section class="service">
+            <div class="container-lg">
+                <div class="row gy-3">
+                    <div class="col-lg-6">
+                        <!-- 全等分是12 col-6等於占一半 -->
+                        <div class="service_parent">
+                            <a href="/product">
+                                <div class="service_img">
+                                    <div class="inner" style="background-image: url(img/bg/bg-33.png);"></div>
+                                </div>
+                            </a>
+                            <div class="service_text">
+                                <div class="service_bg"></div>
+                                <div class="service_inner">
+                                    <h3><a href="/product">產品介紹</a></h3>
+                                    <p>鋼琴、電子琴、各種管樂器、弦樂器、打擊樂器及數位樂器之銷售及維修服務。</p>
+                                </div>
+                                <div class="service_more">
+                                    <a href="/product">了解更多<span class="arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="service_parent">
+                            <a href="/product">
+                                <div class="service_img">
+                                    <div class="inner" style="background-image: url(img/bg/bg-34.png);"></div>
+                                </div>
+                            </a>
+                            <div class="service_text">
+                                <div class="service_bg"></div>
+                                <div class="service_inner">
+                                    <h3><a href="/product">音樂教育</a></h3>
+                                    <p>教材、指導法經歷50年以上的研究，世界通用，在全國教室皆可銜接課程，是最完整的幼兒智能發展課程。</p>
+                                </div>
+                                <div class="service_more">
+                                    <a href="/product">了解更多<span class="arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <!-- 下方的row設定RWD -->
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="news_parent">
+                            <a href="/getNews?id=366">
+                                <div class="news_img">
+                                    <img src="https://picsum.photos/800/600?random=1" alt="random pics">
+                                    <!-- 800/600是解析度 可以在網址查詢各種解析隨機照 -->
+                                </div>
+                            </a>
+                            <div class="news_area">
+                                <div class="area_button"><a href="/getNews?id=366">活動快訊</a></div>
+                                <div class="news_time"><span>八月 3, 2022</span></div>
+                            </div>
+                            <div class="news_text">
+                                <h3 style="height: 53px;overflow: hidden;"><a href="/getNews?id=366">彩繪你的鋼琴彩繪你的鋼琴彩繪你的鋼琴！
+                                        音樂夢</a></h3>
+                                <p>無料！吹嘴體驗＆樂器健檢</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="news_parent">
+                            <a href="/getNews?id=366">
+                                <div class="news_img">
+                                    <img src="https://picsum.photos/800/600?random=5" alt="">
+                                </div>
+                            </a>
+                            <div class="news_area">
+                                <div class="area_button"><a href="/getNews?id=366">活動快訊</a></div>
+                                <div class="news_time"><span>八月 3, 2022</span></div>
+                            </div>
+                            <div class="news_text">
+                                <h3 style="height: 53px;overflow: hidden;"><a href="/getNews?id=366">彩繪你的鋼琴彩繪你的鋼琴彩繪你的鋼琴！
+                                        音樂夢</a></h3>
+                                <p>無料！吹嘴體驗＆樂器健檢</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="news_parent">
+                            <a href="/getNews?id=366">
+                                <div class="news_img">
+                                    <img src="https://picsum.photos/800/600?random=6" alt="">
+                                </div>
+                            </a>
+                            <div class="news_area">
+                                <div class="area_button"><a href="/getNews?id=366">活動快訊</a></div>
+                                <div class="news_time"><span>八月 3, 2022</span></div>
+                            </div>
+                            <div class="news_text">
+                                <h3 style="height: 53px;overflow: hidden;"><a href="/getNews?id=366">彩繪你的鋼琴彩繪你的鋼琴彩繪你的鋼琴！
+                                        音樂夢</a></h3>
+                                <p>無料！吹嘴體驗＆樂器健檢</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="news_parent">
+                            <a href="/getNews?id=366">
+                                <div class="news_img">
+                                    <img src="https://picsum.photos/800/600?random=8" alt="">
+                                </div>
+                            </a>
+                            <div class="news_area">
+                                <div class="area_button"><a href="/getNews?id=366">活動快訊</a></div>
+                                <div class="news_time"><span>八月 3, 2022</span></div>
+                            </div>
+                            <div class="news_text">
+                                <h3 style="height: 53px;overflow: hidden;"><a href="/getNews?id=366">彩繪你的鋼琴彩繪你的鋼琴彩繪你的鋼琴！
+                                        音樂夢</a></h3>
+                                <p>無料！吹嘴體驗＆樂器健檢</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 

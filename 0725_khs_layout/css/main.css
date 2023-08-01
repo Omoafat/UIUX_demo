@@ -58,7 +58,7 @@ header nav .nav_search {
   text-indent: -9999px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;
+  background-size: 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23FFF' d='M15.539 13.316L11.702 9.48a6.252 6.252 0 0 0 .876-3.19 6.29 6.29 0 1 0-6.289 6.289 6.243 6.243 0 0 0 3.189-.876l3.837 3.837a1.573 1.573 0 0 0 2.224-2.224zM1.571 6.29a4.723 4.723 0 0 1 4.718-4.717 4.722 4.722 0 0 1 4.717 4.717 4.722 4.722 0 0 1-4.717 4.717A4.724 4.724 0 0 1 1.571 6.29z'/%3E%3C/svg%3E");
 }
 header nav .nav_search:hover {
@@ -253,7 +253,36 @@ header .bottom_area a:hover {
   display: none;
 }
 
-@media (max-width: 992px) {
+.nav_mobile {
+  position: relative;
+  cursor: pointer;
+  top: 10px;
+}
+.nav_mobile::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  bottom: -3px;
+  right: -8px;
+}
+.nav_mobile .menu {
+  width: 32px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+}
+.nav_mobile .menu .line {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+@media (max-width: 991px) {
   header nav .nav_left {
     position: absolute;
     width: 100%;
@@ -271,4 +300,139 @@ ul, ol {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.service {
+  background-color: #d01a48;
+  margin-top: 30px;
+}
+
+.service_parent {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.service_parent .service_img {
+  width: 100%;
+  height: 330px;
+}
+.service_parent .service_img .inner {
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-size: cover;
+  cursor: pointer;
+}
+.service_parent .service_text {
+  background-color: currentColor;
+  padding: 16px;
+  padding-top: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.service_parent .service_text.bg1 {
+  background: green;
+}
+.service_parent .service_text.bg2 {
+  background: blue;
+}
+.service_parent .service_text .service_bg {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  margin-left: 12px;
+  background-repeat: no-repeat;
+}
+.service_parent .service_text .service_inner {
+  margin-left: 182px;
+  padding-top: 19px;
+  padding-bottom: 36px;
+}
+.service_parent .service_text .service_inner h3 {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 18px;
+  letter-spacing: 0.04em;
+}
+.service_parent .service_text .service_inner h3 a {
+  color: #ffffff;
+}
+.service_parent .service_text .service_inner p {
+  color: #ffffff;
+  line-height: 25px;
+  height: 73px;
+  overflow: hidden;
+  font-size: 0.94rem;
+}
+.service_parent .service_text .service_more {
+  width: 231px;
+  height: 61px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 219.7 56.7' style='enable-background:new 0 0 219.7 56.7;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23ffffff;%7D%0A%3C/style%3E%3Cpath class='st0' d='M0,56.7h219.7V0.1C134.2-1.5,68.3,22.9,0,56.7z'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  color: currentColor;
+  text-align: right;
+  padding-top: 25px;
+  font-weight: bold;
+  border-bottom-right-radius: 20px;
+}
+
+.news_parent {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 7px 24px -2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.news_parent .news_img {
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+.news_parent .news_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news_parent .news_area {
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  padding-top: 23px;
+  border-top: 10px solid currentColor;
+}
+.news_parent .news_area .area_button {
+  float: left;
+}
+.news_parent .news_area .news_time {
+  color: #848484;
+  font-size: 15px;
+  text-align: center;
+  float: right;
+  position: relative;
+  top: 7px;
+}
+.news_parent .news_text {
+  width: 100%;
+  padding: 5px 20px;
+  color: #000000;
+}
+.news_parent .news_text h3 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.25em;
+  height: 84px;
+}
+.news_parent .news_text a {
+  color: #000000;
+}
+.news_parent .news_text p {
+  line-height: 25px;
+  color: #424242;
+  height: 77px;
+  overflow: hidden;
+  letter-spacing: 0.075em;
+  margin-top: 19px;
 }/*# sourceMappingURL=main.css.map */
