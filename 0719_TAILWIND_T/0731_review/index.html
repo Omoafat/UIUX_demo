@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0731's practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 以上，為Tailwind CDN link -->
+    <!-- 以下Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Swiper CDN link -->
+    <!-- Swiper通常為style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Animate.css的CDN -->
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- 連WOW動畫的CDN -->
+  <script>
+    new WOW().init();
+  </script>
+
+    <style>
+        /* html,
+        body {
+            position: relative;
+            height: 100%;
+        } */
+
+        /* body {
+            background: #ffffff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        } */
+
+        .swiper {
+            width: 1000px;
+            height: 500px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #deaaaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="flex bg-teal-500 h-10 items-center p-5">
+        <h1 class="flex-1 text-xl text-white">Hello world</h1>
+        <div class="flex justify-end gap-4 text-white">
+            <h1 class="relative group hover:cursor-pointer">about
+                <div class="absolute hidden group-hover:block bg-gray-300">drop</div>
+            </h1>
+            <h1>news</h1>
+        </div>
+    </nav>
+    <div class="w-full h-full grid grid-rows-3 lg:grid-cols-4 sm:grid-cols-2 gap-3 p-3 ">
+        <!-- RWD要有大小界限 -->
+        <div class="col-span-1 animate__animated animate__flash">
+            <h1 class="text-center">框框標題</h1>
+            <div class="bg-gray-300 w-full h-40 "></div>
+        </div>
+        <div class="col-span-1 animate__animated animate__flash">
+            <h1 class="text-center">框框標題</h1>
+            <div class="bg-gray-300 w-full h-40 "></div>
+        </div>
+        <div class="col-span-1 animate__animated animate__flash">
+            <h1 class="text-center">框框標題</h1>
+            <div class="bg-gray-300 w-full h-40 "></div>
+        </div>
+        <div class="col-span-1 animate__animated animate__flash">
+            <h1 class="text-center">框框標題</h1>
+            <div class="bg-gray-300 w-full h-40 "></div>
+        </div>
+        <div class="col-span-1 animate__animated animate__flash">
+            <h1 class="text-center">框框標題</h1>
+            <div class="bg-gray-300 w-full h-40 "></div>
+        </div>
+        <div class="col-span-1 animate__animated animate__flash">
+            <h1 class="text-center">框框標題</h1>
+            <div class="bg-gray-300 w-full h-40 "></div>
+        </div>
+        
+        <!-- <div class="bg-gray-300 col-span-1 w-full h-40 animate__animated animate__flash"></div>
+        <div class="bg-gray-300 col-span-1 w-full h-40 animate__animated animate__flash"></div>
+        <div class="bg-gray-300 col-span-1 w-full h-40 animate__animated animate__flash"></div>
+        <div class="bg-gray-300 col-span-1 w-full h-40 animate__animated animate__flash"></div>
+        <div class="bg-gray-300 col-span-1 w-full h-40 animate__animated animate__flash"></div>
+        <div class="bg-gray-300 col-span-1 w-full h-40 animate__animated animate__flash"></div>
+        <div class="bg-gray-300 col-span-1 w-full h-40 animate__animated animate__flash"></div>
+        <div class="bg-gray-300 col-span-1 w-full h-40 animate__animated animate__flash"></div> -->
+    </div>
+    <h1 class="m-3 text-xl">最新消息</h1>
+    <div class="relative m-3 flex">
+        <!-- 要先flex並排再定位 -->
+        <img class="h-screen lg:w-2/3 sm:w-full" src="../img/banner.jpeg" alt="">
+        
+        <ul class="absolute top-0 left-[50%] z-10 space-y-4 p-12 lg:w-1/3 sm:w-full ">
+            <li class="bg-gray-200 p-2 w-60">NEWS</li>
+            <li class="bg-gray-200 p-2 w-60">NEWS</li>
+            <li class="bg-gray-200 p-2 w-60">NEWS</li>
+            <li class="bg-gray-200 p-2 w-60">NEWS</li>
+            <li class="bg-gray-200 p-2 w-60">NEWS</li>
+            <li class="bg-gray-200 p-2 w-60">NEWS</li>
+        </ul>
+    </div>
+    
+    
+    
+    
+
+        
+    
+
+    <br>
+    <!-- Swiper -->
+    <div class="wow animate__animated animate__flash swiper mySwiper m-3 m-auto">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <iframe class="m-auto" width="560" height="315" src="https://www.youtube.com/embed/r9h4gRZAGv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>cosmos</iframe>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- Swiper's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    
+<!-- vue起手式 -->
+<script>
+    const { createApp, ref, reactive } = Vue
+  //  ref 數值 字串 布林值/ reactive 陣列 物件
+    createApp({
+      setup() {}
+    }).mount('#app')
+</script>
+
+
+</body>
+
+</html>

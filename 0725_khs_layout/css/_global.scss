@@ -3,3 +3,8 @@ ul,ol {
     margin: 0;
     padding: 0;
   }
+  a{
+    color: #fff;
+    text-decoration: none;
+    // scss可以把顏色6位數相同的縮寫成3個
+  }
