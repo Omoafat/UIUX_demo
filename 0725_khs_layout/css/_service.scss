@@ -1,6 +1,50 @@
 .service{
   background-color: $primary;
   margin-top: 30px;
+  margin-bottom: 50px;
+  h2{
+    width: 100%;
+    height: 80px;
+    background-color:#fff;
+    text-align: right;
+    position: relative;
+    &::before{
+      content: "";
+      width: 10%;
+      height: 77px;
+      display: block;
+      background-color: $primary;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .container-lg{
+      position: relative;
+      span{
+        z-index: 1;
+        position: relative;
+        top: 20px;
+        letter-spacing: 10px;
+        right: 18px;
+        color: #fff;
+      }
+    }
+    .container-lg::before{
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 105px;
+      top: -21px;
+      right: 0;
+      z-index: 1;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 100'%3E%3Cstyle%3E.st0%7Bfill:%23d01a48%7D%3C/style%3E%3Cpath class='st0' d='M0 100c35.1 0 76.8-5.8 123.9-22.2C221.4 43.7 292.1 0 377 0c51.3 0 74.6 22.9 103 22.9V100H0z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+    }
+
+  }
+  .container-lg{
+    padding: 30px;
+  }
 }
 // overflow可以把圖片超出去的直角部分刪掉
 .service_parent{
@@ -74,8 +118,80 @@
         padding-top: 25px;
         font-weight: bold;
         border-bottom-right-radius: 20px;
+        
+        a{
+          color: black;
+
+          
+        }
       }
       // 當前顏色: 吃父層顏色
       // 可以單一調整一角的圓弧
     }
   }
+
+
+  
+  .arrow{
+  display: inline-block;
+  width: 26px;
+  height: 17px;
+  position: relative;
+  top: 4px;
+  transition: all .2s cubic-bezier(0, 0.41, 0.58, 1);
+  transform: translateX(0);
+  opacity : 1;
+  &:before{
+      content: "";
+      width: 9px;
+      height: 9px;
+      border: 1px solid currentColor;
+      border-left: none;
+      border-bottom: none;
+      -moz-transform:rotate(45deg);
+      -webkit-transform:rotate(45deg);
+      -o-transform:rotate(45deg);
+      -ms-transform:rotate(45deg);
+      transform: rotate(45deg);
+      display: block;
+      position: absolute;
+      right: 9px;
+      bottom: 6px;
+    }
+    // 上面那些一串前面是供應商前綴
+  &:after{
+      content: "";
+      width: 12px;
+      height: 10px;
+      border-top: 1px solid currentColor;
+      display: block;
+      position: absolute;
+      right: 8px;
+      bottom: 1px; 
+  }
+}
+
+.arrow_wrap:hover .arrow{
+  transform: translateX(4px);
+  opacity : .75;
+}
+
+@media(min-width: $xxl){
+  .service{
+    h2{
+      &::before{
+        width: 15%;
+      }
+    }
+  }
+}
+@media(min-width: 1800px){ 
+  .service{
+    h2{
+      &::before{
+        width: 27%;
+      }
+    }
+  }
+}
+// 原本寬10%，寬於1800px時寬度變27%

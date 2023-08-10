@@ -7,6 +7,10 @@
     <title>KHS功學社音樂中心</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <!-- Animate.css的CDN -->
+    <link rel="stylesheet" href="css/animate.css">
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -144,12 +148,13 @@
         <!-- 把輪播圖點點與圖底下文字置為同層級 才不會被蓋過 -->
         <!-- 但點點的div太長會蓋到"關於我們"，要縮短並靠右 -->
         <div class="bottom_area">
-            <h1>
+            <h1 data-wow-duration="1s" data-wow-delay=".6s" class="wow animate__animated animate__fadeInLeft">
                 全心灌溉熱愛音樂的幼苗
                 <button id="youtube_button" class="youtube_play"></button>
             </h1>
-            <p>功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。</p>
-            <a>關於我們</a>
+            <p data-wow-duration="1s" data-wow-delay=".9s" class="wow animate__animated animate__fadeInLeft">功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。</p>
+            <a data-wow-duration="1s" data-wow-delay="1.2s" class="wow animate__animated animate__fadeInLeft" href="">關於我們</a>
+                <!-- 動畫的持續及延遲觸發設定(持續盡量不超過1秒) -->
         </div>
         <!-- 若要將文字也變成可輪播 把文字區塊放進swiper slide即可 -->
         <a id="go_down" class="go_down" href="#">down</a>
@@ -157,14 +162,19 @@
     </header>
     <main>
         <section class="service">
+            <h2>
+                <div class="container-lg">
+                  <span>服務項目</span>
+                </div>
+              </h2>
             <div class="container-lg">
                 <div class="row gy-3">
                     <div class="col-lg-6">
                         <!-- 全等分是12 col-6等於占一半 -->
                         <div class="service_parent">
                             <a href="/product">
-                                <div class="service_img">
-                                    <div class="inner" style="background-image: url(img/bg/bg-33.png);"></div>
+                                <div class="service_img zoom">
+                                    <div class="inner bg" style="background-image: url(img/bg/bg-33.png);"></div>
                                 </div>
                             </a>
                             <div class="service_text">
@@ -173,7 +183,7 @@
                                     <h3><a href="/product">產品介紹</a></h3>
                                     <p>鋼琴、電子琴、各種管樂器、弦樂器、打擊樂器及數位樂器之銷售及維修服務。</p>
                                 </div>
-                                <div class="service_more">
+                                <div class="service_more arrow_wrap">
                                     <a href="/product">了解更多<span class="arrow"></span></a>
                                 </div>
                             </div>
@@ -183,8 +193,8 @@
                     <div class="col-lg-6">
                         <div class="service_parent">
                             <a href="/product">
-                                <div class="service_img">
-                                    <div class="inner" style="background-image: url(img/bg/bg-34.png);"></div>
+                                <div class="service_img zoom">
+                                    <div class="inner bg" style="background-image: url(img/bg/bg-34.png);"></div>
                                 </div>
                             </a>
                             <div class="service_text">
@@ -193,7 +203,7 @@
                                     <h3><a href="/product">音樂教育</a></h3>
                                     <p>教材、指導法經歷50年以上的研究，世界通用，在全國教室皆可銜接課程，是最完整的幼兒智能發展課程。</p>
                                 </div>
-                                <div class="service_more">
+                                <div class="service_more arrow_wrap">
                                     <a href="/product">了解更多<span class="arrow"></span></a>
                                 </div>
                             </div>
@@ -210,11 +220,13 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="news_parent">
+                        <div data-wow-duration="1.2s" data-wow-delay="0.3s" class="news_parent wow animate__animated animate__fadeIn">
                             <a href="/getNews?id=366">
-                                <div class="news_img">
+                                <div class="news_img zoom">
+                                    <div class="inner">
                                     <img src="https://picsum.photos/800/600?random=1" alt="random pics">
                                     <!-- 800/600是解析度 可以在網址查詢各種解析隨機照 -->
+                                    </div>
                                 </div>
                             </a>
                             <div class="news_area">
@@ -230,7 +242,7 @@
 
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="news_parent">
+                        <div data-wow-duration="1.2s" data-wow-delay="0.5s" class="news_parent wow animate__animated animate__fadeIn">
                             <a href="/getNews?id=366">
                                 <div class="news_img">
                                     <img src="https://picsum.photos/800/600?random=5" alt="">
@@ -249,7 +261,7 @@
 
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="news_parent">
+                        <div data-wow-duration="1.2s" data-wow-delay="0.7s" class="news_parent wow animate__animated animate__fadeIn">
                             <a href="/getNews?id=366">
                                 <div class="news_img">
                                     <img src="https://picsum.photos/800/600?random=6" alt="">
@@ -267,7 +279,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="news_parent">
+                        <div data-wow-duration="1.2s" data-wow-delay="0.9s" class="news_parent wow animate__animated animate__fadeIn">
                             <a href="/getNews?id=366">
                                 <div class="news_img">
                                     <img src="https://picsum.photos/800/600?random=8" alt="">
@@ -326,6 +338,10 @@
             },
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+      </script>
 </body>
 
 </html>
